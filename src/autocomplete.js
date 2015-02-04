@@ -357,7 +357,7 @@ angular.module('google.places', [])
                     $scope.selected = index;
                 };
 
-                $scope.$watch('predictions', function () {
+                $scope.$watch('predictions.length', function () {
                     $scope.position = getDrawerPosition($scope.input);
                 });
 
