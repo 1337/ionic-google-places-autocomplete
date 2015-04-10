@@ -364,6 +364,7 @@ angular.module('google.places', [])
                 function getDrawerPosition(element) {
                     var domEl = element[0],
                         rect = domEl.getBoundingClientRect(),
+                        height = (rect.height !== undefined) ? rect.height : rect.bottom - rect.top,
                         docEl = $document[0].documentElement,
                         body = $document[0].body,
                         scrollTop = $window.pageYOffset || docEl.scrollTop || body.scrollTop,
@@ -371,8 +372,8 @@ angular.module('google.places', [])
 
                     return {
                         width: rect.width,
-                        height: rect.height,
-                        top: rect.top + rect.height + scrollTop,
+                        height: height,
+                        top: rect.top + height + scrollTop,
                         left: rect.left + scrollLeft
                     };
                 }
