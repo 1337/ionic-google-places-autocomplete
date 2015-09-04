@@ -361,7 +361,9 @@ angular.module('google.places', [])
                     try {
                         var $ionicBackdrop = $injector.get('$ionicBackdrop');
                         if ($scope.predictions.length) {
-                            $ionicBackdrop._element.css('background-color', 'transparent');
+                            $ionicBackdrop._element
+                                .css('background-color', 'transparent');
+                            $ionicBackdrop.release();
                             $ionicBackdrop.retain();
                         } else {
                             $ionicBackdrop.release();
