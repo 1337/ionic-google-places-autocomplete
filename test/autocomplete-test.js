@@ -1,9 +1,9 @@
 /*
- * angular-google-places-autocomplete
+ * ionic-google-places-autocomplete
  *
- * Copyright (c) 2014 "kuhnza" David Kuhn
+ * Copyright (c) 2015 "kuhnza" David Kuhn
  * Licensed under the MIT license.
- * https://github.com/kuhnza/angular-google-places-autocomplete/blob/master/LICENSE
+ * https://github.com/1337/ionic-google-places-autocomplete/blob/master/LICENSE
  */
 
 'use strict';
